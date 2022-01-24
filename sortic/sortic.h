@@ -10,3 +10,5 @@ vector<int> reverse_vector(vector<int> vector1);
 void push_high(int element, vector<int>& vector);
 void pa(vector<int>& vector_a, vector<int>& vector_b);
 void pb(vector<int>& vector_a, vector<int>& vector_b);
+void print_vector(const vector <int>& vector1);
+void sa(vector <int>& vector_a);
