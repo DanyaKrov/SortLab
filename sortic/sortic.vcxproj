@@ -139,6 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="push_front.cpp" />
     <ClCompile Include="p_functions.cpp" />
     <ClCompile Include="sortic.cpp" />
   </ItemGroup>
