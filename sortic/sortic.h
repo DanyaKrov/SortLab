@@ -7,8 +7,7 @@ using namespace std;
 
 //additional fucnctions
 void print_vector(const vector <int>& vector1);
-void ss(vector <int>& vector_a, vector <int>& vector_b);
-vector<int> reverse_vector(vector<int> vector1);
+void reverse_vector(vector<int>& vector1);
 void push_high(int element, vector<int>& vector);
 
 //s functions
