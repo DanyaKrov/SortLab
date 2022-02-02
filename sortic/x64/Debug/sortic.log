@@ -1,2 +1,3 @@
 ﻿  sortic.cpp
-  sortic.vcxproj -> C:\Users\uchenik\source\repos\SortLab\sortic\x64\Debug\sortic.exe
+C:\Users\Danya\SortLab\sortic\sortic.cpp(44,23): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+  sortic.vcxproj -> C:\Users\Danya\SortLab\sortic\x64\Debug\sortic.exe
