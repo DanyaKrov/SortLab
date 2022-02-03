@@ -10,6 +10,15 @@ bool issorted(vector<int>vector) {
     }
     return true;
 }
+bool isRevsorted(vector<int>vector) {
+    if (vector.size() < 2)
+        return true;
+    for (int i = 1; i < vector.size(); i++) {
+        if (vector[i] > vector[i - 1])
+            return false;
+    }
+    return true;
+}
 int len(string str)
 {
     int res = 0;
@@ -47,19 +56,21 @@ int main()
     vector <int> b;
     full(a);
     int len = a.size();
-    while (b.size() < len && !(issorted(a) && issorted(b))){
+    while (b.size() < len && !(issorted(a) && issorted(b)) || (a.size() == len && issorted(a))){
         while (a[0] != min(a)) {
             ra(a);
             cout << "ra" <<endl;
             print(a, b);
         }
+        if ((issorted(a) && isRevsorted(b)))
+            break;
         pb(a, b);
         cout << "pb" <<endl;
         print(a, b);
     }
     len = b.size();
     int len2 = a.size();
-    for (int i = 0; i < mod(len - len2); i++) {
+    for (int i = 0; i < len; i++) {
         pa(a, b);
         cout << "pa" <<endl;
         print(a, b);
