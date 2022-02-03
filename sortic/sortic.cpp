@@ -1,4 +1,4 @@
-﻿#include "sortic.h"
+#include "sortic.h"
 
 
 bool issorted(vector<int>vector) {
@@ -30,15 +30,34 @@ int min(vector<int>vector) {
     }
     return min;
 }
+int len(string str)
+{
+    int res = 0;
+    for (int i = 0; str[i] != '\0'; i++) {
+        res += 1;
+    }
+    return res;
+}
 
+int str_to_int(string str) //convert string to integer
+{
+    int res = 0;
+    int mult = 1;
+    string rev_str = "";
+    for (int i = len(str) - 1; i >= 0; i--) {
+        res += (str[i] - 48) * mult;
+        mult *= 10;
+    }
+    return res;
+}
 int main()
 {
-    char s;
+    string s;
     vector <int> a;
     vector <int> b;
     cin >> s;
-    while (s != '!') {
-        a.push_back(s - '0');
+    while (s != "!") {
+        a.push_back(str_to_int(s));
         cin >> s;
     }
     int len = a.size();
