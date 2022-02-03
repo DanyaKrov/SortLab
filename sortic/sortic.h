@@ -6,7 +6,7 @@ using namespace std;
 
 
 //additional functions
-void print_vector(const vector <int>& vector1);
+void print_vector(const vector <int>& vector1, string arg);
 void reverse_vector(vector<int>& vector1);
 void push_high(int element, vector<int>& vector);
 void rshift(vector <int>& mass);
@@ -30,3 +30,6 @@ void rr(vector <int>& vector_a, vector <int>& vector_b);
 void rra(vector<int>& vector_a);
 void rrb(vector<int>& vector_b);
 void rrr(vector<int>& vector_a, vector<int>& vector_b);
+
+
+int mod(int num);
