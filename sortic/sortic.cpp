@@ -1,4 +1,4 @@
-#include "sortic.h"
+﻿#include "sortic.h"
 
 
 bool issorted(vector<int>vector) {
@@ -9,26 +9,6 @@ bool issorted(vector<int>vector) {
             return false;
     }
     return true;
-}
-int max(vector<int>vector) {
-    int max = -1000;
-    if (vector.size() == 0)
-        return 0;
-    for (int i = 0; i < vector.size(); i++) {
-        if (vector[i] > max)
-            max = vector[i];
-    }
-    return max;
-}
-int min(vector<int>vector) {
-    int min = 1000;
-    if (vector.size() == 0)
-        return 0;
-    for (int i = 0; i < vector.size(); i++) {
-        if (vector[i] < min)
-            min = vector[i];
-    }
-    return min;
 }
 int len(string str)
 {
@@ -71,16 +51,17 @@ int main()
         while (a[0] != min(a)) {
             ra(a);
             cout << "ra" <<endl;
+            print(a, b);
         }
         pb(a, b);
         cout << "pb" <<endl;
+        print(a, b);
     }
     len = b.size();
     int len2 = a.size();
     for (int i = 0; i < mod(len - len2); i++) {
         pa(a, b);
         cout << "pa" <<endl;
+        print(a, b);
     }
-    print_vector(a, "a");
-    print_vector(b, "b");
 }

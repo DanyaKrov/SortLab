@@ -31,5 +31,8 @@ void rra(vector<int>& vector_a);
 void rrb(vector<int>& vector_b);
 void rrr(vector<int>& vector_a, vector<int>& vector_b);
 
-
+//additional functions
 int mod(int num);
+void print(vector<int> a, vector<int> b);
+int max(vector<int>vector);
+int min(vector<int>vector);

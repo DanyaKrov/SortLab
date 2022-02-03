@@ -10,5 +10,5 @@ void print_vector(const vector <int>& vector1, string arg) //print vector in con
 		cout << vector1[vector1.size() - 1] << "]" << endl;
 	}
 	else
-		cout <<arg <<" = []";
+		cout <<arg <<" = []" <<endl;
 }
